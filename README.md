@@ -6,8 +6,8 @@ API criada com Django e Rest Framework para um sistema de bibliotecas.
 
 Os seguintes modelos de dados foram implementados para representar o sistema de bibliotecas:
 
-- Livro: Título, Autor, Gênero, Data de Publicação.
-- Autor: Nome, Data de Nascimento, Nacionalidade.
+- Livro: Título, Autor, Categoria, Data de Publicação.
+- Leitor: Nome, Idade, Cidade
 - Empréstimo: Livro, Data de Empréstimo, Data de Devolução, Usuário.
 
 #### 2. Serializers
@@ -28,7 +28,7 @@ Foram criados os seguintes endpoints e suas respectivas views:
 
 - `/livros/`: Listagem de todos os livros. (GET)
 - `/livros/<id>/`: Detalhes de um livro específico. (GET)
-- `/autores/`: Listagem de todos os autores. (GET)
-- `/autores/<id>/`: Detalhes de um autor específico. (GET)
+- `/leitores/`: Listagem de todos os leitores. (GET)
+- `/leitores/<id>/`: Detalhes de um leitor específico. (GET)
 - `/emprestimos/`: Listagem de todos os empréstimos. (GET, POST)
-- `/emprestimos/<id>/`: Detalhes
+- `/emprestimos/<id>/`: Detalhes dos emprestimos
