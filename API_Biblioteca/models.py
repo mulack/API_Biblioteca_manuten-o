@@ -25,6 +25,10 @@ class Emprestimo(models.Model):
     leitor = models.ForeignKey(Leitor, on_delete=models.DO_NOTHING)
     livro = models.ForeignKey(Livro, on_delete=models.DO_NOTHING)
     data_emprestimo = models.DateField(auto_now_add=True)
+    data_devolucao = models.DateField(null=True)
+
+    def __str__(self):
+        return f'{self.leitor} - {self.livro}'
 
 
 

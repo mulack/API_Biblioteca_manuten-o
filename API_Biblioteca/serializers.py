@@ -12,3 +12,8 @@ class Leitor_Serializer(serializers.ModelSerializer):
         model = Leitor
         fields = ['id', 'nome', 'idade', 'cidade'] 
 
+
+class Emprestimo_Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = Emprestimo
+        fields = ['id', 'leitor', 'livro', 'data_emprestimo', 'data_devolucao']

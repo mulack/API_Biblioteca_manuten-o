@@ -13,7 +13,7 @@ class LeitorAdmin(admin.ModelAdmin):
 
 
 class EmprestimoAdmin(admin.ModelAdmin):
-    list_display = ['leitor', 'livro', 'data_emprestimo']
+    list_display = ['leitor', 'livro', 'data_emprestimo', 'data_devolucao']
     ordering = ['leitor',]
 
 
