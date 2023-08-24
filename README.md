@@ -18,9 +18,10 @@ Foram criados serializers para cada modelo criado.
 
 Autenticação por token para API. Com os seguintes grupos de permissões:
 
-- Grupo "Admin": Acesso total para administradores.
-- Grupo "Usuários": Acesso para listar e pegar detalhes de livros, autores e empréstimos.
-- Grupo "Bibliotecários": Acesso para listar, criar, atualizar e excluir livros, autores e empréstimos.
+- Grupo "Leitores": Acesso para listar e pegar detalhes de livros e empréstimos.
+- Grupo "Bibliotecários": Acesso para listar, criar, atualizar e excluir livros, leitores e empréstimos.
+
+OBS: Para essa API as permissões são as mesmas do DjangoModelPermissions para fins didáticos
 
 #### 4. Endpoints e Views
 
