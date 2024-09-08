@@ -3,9 +3,9 @@ from API_Biblioteca.views import *
 
 # gerador automático de urls do rest
 router = SimpleRouter()
-router.register('livros', Livro_API)
-router.register('leitores', Leitor_API)
-router.register('emprestimos', Emprestimo_API)
+router.register('livros', LivroAPI)
+router.register('leitores', LeitorAPI)
+router.register('emprestimos', EmprestimoAPI)
 
 urlpatterns = [
     # outras urls do seu projeto
