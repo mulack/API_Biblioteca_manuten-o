@@ -1,5 +1,5 @@
 from rest_framework.routers import SimpleRouter
-from API_Biblioteca.views import *
+from API_Biblioteca.views import LivroAPI,LeitorAPI,EmprestimoAPI
 
 # gerador automático de urls do rest
 router = SimpleRouter()

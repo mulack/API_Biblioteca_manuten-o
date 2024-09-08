@@ -1,5 +1,5 @@
 from django.contrib import admin
-from API_Biblioteca.models import *
+from API_Biblioteca.models import Livro, Leitor, Emprestimo
 
 
 class LivroAdmin(admin.ModelAdmin):

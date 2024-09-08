@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
-from API_Biblioteca.models import *
-from API_Biblioteca.serializers import *
+from API_Biblioteca.models import Livro, Leitor, Emprestimo
+from API_Biblioteca.serializers import LivroSerializer, LeitorSerializer, EmprestimoSerializer
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from rest_framework.response import Response

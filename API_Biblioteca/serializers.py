@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from API_Biblioteca.models import *
+from API_Biblioteca.models import Livro, Leitor, Emprestimo
 
 class LivroSerializer(serializers.ModelSerializer):
     class Meta:
